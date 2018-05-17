@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<script type="text/javascript" src="https://momentjs.com/downloads/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+<script type="text/javascript" src="chartjs-plugin-streaming.js"></script>
+</head>
+<body>
+	<canvas id="myChart"></canvas>
+	<script type="text/javascript">
+	var ctx = document.getElementById('myChart').getContext('2d');
+
+	var chart = new Chart(ctx, {
+
+	type: 'line',
+
+	data: {
+
+		datasets: [{
+
+			data: []
+
+		},{
+
+			data: []
+
+		}]
+
+	},
+
+	options: {
+
+		scales: {
+
+			xAxes: [{
+
+				type: 'realtime'
+
+			}]
+
+		}
+
+	}
+
+	});
+	</script>
+
+</body>
+</html>

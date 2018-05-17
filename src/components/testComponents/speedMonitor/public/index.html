@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>speed</title>
+</head>
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <h1 id="speed" style="font-family:'Quicksand',sans-serif;color:grey;text-align:center"></h1>
+  <script type="text/javascript "src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript">
+    var socket = io.connect()
+
+    socket.on('speed', function (value) {
+      console.log(value)
+      document.getElementById("speed").innerHTML = value + " m/s";
+    })
+
+  </script>
+</body>
+</html>

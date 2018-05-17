@@ -1,0 +1,9 @@
+{
+  "positionTopic": "spruce/apt-2/living/position",
+  "intensityTopic": "spruce/apt-2/living/intensity",
+  "locationStatus": "spruce/apt-2/living/status",
+  "speedTopic": "spruce/apt-2/yoitsu/movementstatus",
+  "distanceTopic": "spruce/apt-2/living/distance",
+  "sprucePositionTopic": "spruce/apt-2/living/position",
+  "dummuyTopic":"dummuy"
+}
